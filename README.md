@@ -14,7 +14,7 @@ npm install --save require-subdir
 2. Include it in your source:
 
 ```js
-const requireSubdir = require('require-subdir');`
+const requireSubdir = require('require-subdir');
 
 requireSubdir(SUBDIR_TO_INCLUDE, function(err, includes) {
   // includes is an array of included files.
