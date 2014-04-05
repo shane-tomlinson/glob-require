@@ -1,4 +1,4 @@
-# require-subdir
+# require-subdirectory
 
 Recursively find and call `require` on all matching files in a subdirectory.
 
