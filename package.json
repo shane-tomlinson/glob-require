@@ -1,0 +1,30 @@
+{
+  "name": "require-subdir",
+  "version": "0.0.0",
+  "description": "recursively find and call `require` on all matching files in a subdirectory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shane-tomlinson/require-subdirectory.git"
+  },
+  "keywords": [
+    "require",
+    "subdirectory"
+  ],
+  "author": "Shane Tomlinson <shane@shanetomlinson.com>",
+  "license": "MPL 2.0",
+  "bugs": {
+    "url": "https://github.com/shane-tomlinson/require-subdirectory/issues"
+  },
+  "homepage": "https://github.com/shane-tomlinson/require-subdirectory",
+  "dependencies": {
+    "glob": "~3.2.9"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1"
+  }
+}
