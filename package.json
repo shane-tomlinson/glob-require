@@ -1,6 +1,6 @@
 {
   "name": "require-subdir",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "recursively find and call `require` on all matching files in a subdirectory.",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/shane-tomlinson/require-subdirectory",
   "dependencies": {
-    "glob": "~3.2.9"
+    "glob": "3.2.9"
   },
   "devDependencies": {
-    "mocha": "~1.18.2",
-    "chai": "~1.9.1"
+    "mocha": "1.18.2",
+    "chai": "1.9.1"
   }
 }
