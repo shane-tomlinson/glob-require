@@ -1,7 +1,7 @@
 {
-  "name": "require-subdir",
+  "name": "glob-require",
   "version": "0.0.1",
-  "description": "recursively find and call `require` on all matching files in a subdirectory.",
+  "description": "Use glob to find and call `require` on all matching files in a directory tree.",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/test.js"
@@ -12,7 +12,11 @@
   },
   "keywords": [
     "require",
-    "subdirectory"
+    "directory",
+    "npm",
+    "glob",
+    "find",
+    "search"
   ],
   "author": "Shane Tomlinson <shane@shanetomlinson.com>",
   "license": "MPL 2.0",

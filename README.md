@@ -1,22 +1,40 @@
-# require-subdirectory
+# glob-require
 
-Recursively find and call `require` on all matching files in a subdirectory.
+Use glob to find and call `require` on all matching files in a directory tree.
 
 ## Installation
 
 ```bash
-npm install --save require-subdir
+npm install --save glob-require
 ```
 
 ## Usage
 
-1. Install using npm: `npm install require-subdir`
+1. Install using npm: `npm install glob-require`
 2. Include it in your source:
 
 ```js
-const requireSubdir = require('require-subdir');
+const globRequire = require('glob-require');
 
-requireSubdir(SUBDIR_TO_INCLUDE, function(err, includes) {
+// simple case, pass in a subdirectory to include to
+// search for and require all .js files.
+globRequire(SUBDIR_TO_INCLUDE, function(err, includes) {
+  // includes is an array of included files.
+  // each include contains two fields:
+  // * path - full path to included file
+  // * exports - the return value of `require`
+  processIncludes(includes);
+});
+```
+
+```js
+const globRequire = require('glob-require');
+
+// advanced case, pass a 'glob' pattern and configuration object.
+// See https://github.com/isaacs/node-glob#options for a list of options.
+globRequire('**/*.js', {
+  cwd: SUBDIR_TO_INCLUDE
+}, function(err, includes) {
   // includes is an array of included files.
   // each include contains two fields:
   // * path - full path to included file
@@ -33,11 +51,11 @@ npm test
 
 ## Get involved:
 
-If you see any bugs or find any features you wish to add, submit a pull request!
+If you find a bugs or see any features you wish to add, file an issue or submit a pull request!
 
 ## Repo information:
 
-https://github.com/shane-tomlinson/require-subdirectory
+https://github.com/shane-tomlinson/glob-require
 
 ## Author:
 * Shane Tomlinson
