@@ -1,6 +1,6 @@
 {
   "name": "glob-require",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use glob to find and call `require` on all matching files in a directory tree.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shane-tomlinson/require-subdirectory.git"
+    "url": "https://github.com/shane-tomlinson/glob-require.git"
   },
   "keywords": [
     "require",
@@ -19,16 +19,16 @@
     "search"
   ],
   "author": "Shane Tomlinson <shane@shanetomlinson.com>",
-  "license": "MPL 2.0",
+  "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/shane-tomlinson/require-subdirectory/issues"
+    "url": "https://github.com/shane-tomlinson/glob-require/issues"
   },
-  "homepage": "https://github.com/shane-tomlinson/require-subdirectory",
+  "homepage": "https://github.com/shane-tomlinson/glob-require",
   "dependencies": {
-    "glob": "3.2.9"
+    "glob": "7.0.6"
   },
   "devDependencies": {
-    "mocha": "1.18.2",
-    "chai": "1.9.1"
+    "mocha": "3.0.2",
+    "chai": "3.5.0"
   }
 }
